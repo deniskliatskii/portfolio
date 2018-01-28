@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Popins', sans-serif;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+/* .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}  */
+
+// Центрирующий контейнер под медиа запросы параметры менять в mixin
+.container {
+    @include container;
+} 
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+// delete margin end padding p end h:
+/*
+h1, h2, h3, h4, h5, h6, p {   
+    margin: 0;
+    padding: 0;
+} */
